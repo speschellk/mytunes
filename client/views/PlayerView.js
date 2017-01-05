@@ -7,28 +7,6 @@ var PlayerView = Backbone.View.extend({
 
 
   initialize: function() {
-    // this.listenTo(el, 'ended', function() {
-
-    // this.events = {
-    //   'ended': console.log(this)
-    // };
-
-
-    //   console.log('heyo');
-    // });
-    // this.on('change:$el', function() {
-    //   debugger;
-    // });
-
-
-    var that = this;
-    // debugger;
-    // this.$el.bind('ended', function(e, that) {
-    //   //debugger;
-    //   console.log(e);
-      // that.model;
-      // debugger;
-    // });
   },
 
   events: {
