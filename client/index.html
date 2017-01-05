@@ -22,11 +22,14 @@
     <script>
       $(function() {
         // set up model objects
-        var library = new Songs(songData);
-        var app = new AppModel({library: library});
+        var library = new Songs(songData); // instance of the songs collection and is extended with a SongModel model?
+        var app = new AppModel({library: library}); // instance of the AppModel model and is initialized with the library collection
 
         // build a view for the top level of the whole app
-        var appView = new AppView({model: app});
+        var appView = new AppView({model: app}); // instance of AppView view that is initialized with model: app --> has render functoin that returns playerView element and libraryView element
+        console.log('library ', library);
+        console.log('app ', app);
+        console.log('appView ', appView);
 
         // put the view onto the screen
         $('body').append(appView.render());
