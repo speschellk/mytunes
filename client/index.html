@@ -17,6 +17,8 @@
     <script src="views/PlayerView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
+    <script src="views/SongQueueView.js"></script>
     <script src="views/AppView.js"></script>
 
     <script>
@@ -27,10 +29,6 @@
 
         // build a view for the top level of the whole app
         var appView = new AppView({model: app}); // instance of AppView view that is initialized with model: app --> has render functoin that returns playerView element and libraryView element
-        console.log('library ', library);
-        console.log('app ', app);
-        console.log('appView ', appView);
-
         // put the view onto the screen
         $('body').append(appView.render());
       });
